@@ -22,9 +22,6 @@ public class Problem1330 {
         } catch (NumberFormatException e){
             System.out.println("숫자를 입력해주세요!");
             return;
-        } catch (Exception e) {
-            System.out.println("잘못된 입력");
-            return;
         }
 
         if(first > second) System.out.println(">");
