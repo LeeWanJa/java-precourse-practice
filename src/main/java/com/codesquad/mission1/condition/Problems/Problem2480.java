@@ -1,5 +1,6 @@
 package com.codesquad.mission1.condition.Problems;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Problem2480 {
@@ -28,28 +29,14 @@ public class Problem2480 {
             return;
         }
 
-        // 모두 같다면 3, 두 개만 같다면 1, 세 개 다 다르다면 0
-        int diceCase = 3;
-        int max = -1;
-        int sameValue = -1;
+        Arrays.sort(diceValue);
 
-        for(int i = 0; i < diceValue.length; i++) {
-            int compare = diceValue[(i + 1) % 3];
-
-            if (diceValue[i] == compare){
-                sameValue = compare;
-                continue;
-            }
-
-            diceCase--;
-            max = Math.max(diceValue[i], compare);
-        }
-
-        switch(diceCase){
-            case 3 -> System.out.println(10000 + (sameValue * 1000));
-            case 1 -> System.out.println(1000 + (sameValue * 100));
-            case 0 -> System.out.println(max * 100);
-            default -> System.out.println("오류 발생");
+        if(diceValue[0] == diceValue[2]){
+            System.out.println(10000 + diceValue[0] * 1000);
+        } else if(diceValue[0] == diceValue[1] || diceValue[1] == diceValue[2]){
+            System.out.println(1000 + diceValue[1] * 100);
+        } else {
+            System.out.println(diceValue[2] * 100);
         }
     }
 
