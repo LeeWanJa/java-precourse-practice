@@ -1,0 +1,30 @@
+plugins {
+    id 'java'
+}
+
+java{
+    toolchain{
+        languageVersion = JavaLanguageVersion.of(21)
+    }
+}
+
+group = 'com.codesquad' // 혹은 'mission' 등 자유롭게
+version = '0.0.1-SNAPSHOT'
+
+repositories {
+    mavenCentral() // 라이브러리 저장소 (쇼핑몰)
+}
+
+dependencies {
+    testImplementation("org.mockito:mockito-core:5.21.0")
+    testImplementation("org.assertj:assertj-core:3.27.6")
+    testImplementation("org.junit.jupiter:junit-jupiter:6.0.1")
+}
+
+test {
+    useJUnitPlatform() // JUnit 5 사용 설정
+}
+
+tasks.withType(JavaCompile){
+    options.encoding = 'UTF-8'
+}
