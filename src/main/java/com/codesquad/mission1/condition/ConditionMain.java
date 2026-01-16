@@ -13,7 +13,6 @@ public class ConditionMain {
 
         printMain();
         while(!(input = userInput.nextLine()).equals("exit")){
-            // 띄어쓰기 제어
             input = input.trim();
 
             switch(input){
@@ -23,7 +22,7 @@ public class ConditionMain {
                 case "4" -> Problem14681.findQuadrant(userInput);
                 case "5" -> Problem2884.alarmClock(userInput);
                 case "6" -> Problem2525.ovenClock(userInput);
-                case "7" -> System.out.println("7");
+                case "7" -> Problem2480.rollTheDice(userInput);
                 default -> System.out.println("잘못된 숫자를 입력했습니다. 1 ~ 7 혹은 exit를 입력해주세요!");
             };
 
