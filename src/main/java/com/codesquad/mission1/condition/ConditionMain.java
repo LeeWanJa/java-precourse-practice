@@ -22,7 +22,7 @@ public class ConditionMain {
                 case "3" -> Problem2753.leafYear(userInput);
                 case "4" -> Problem14681.findQuadrant(userInput);
                 case "5" -> Problem2884.alarmClock(userInput);
-                case "6" -> System.out.println("6");
+                case "6" -> Problem2525.ovenClock(userInput);
                 case "7" -> System.out.println("7");
                 default -> System.out.println("잘못된 숫자를 입력했습니다. 1 ~ 7 혹은 exit를 입력해주세요!");
             };
