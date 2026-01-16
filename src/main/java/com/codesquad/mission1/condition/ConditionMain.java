@@ -3,6 +3,8 @@ package com.codesquad.mission1.condition;
 import java.util.Scanner;
 
 import com.codesquad.mission1.condition.Problems.Problem1330;
+import com.codesquad.mission1.condition.Problems.Problem9498;
+
 import static com.codesquad.mission1.condition.ConditionPrint.printMain;
 
 public class ConditionMain {
@@ -17,7 +19,7 @@ public class ConditionMain {
 
             switch(input){
                 case "1" -> Problem1330.compareInt(userInput);
-                case "2" -> System.out.println("2");
+                case "2" -> Problem9498.testScore(userInput);
                 case "3" -> System.out.println("3");
                 case "4" -> System.out.println("4");
                 case "5" -> System.out.println("5");

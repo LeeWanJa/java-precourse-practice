@@ -8,6 +8,12 @@ public class Problem1330 {
         System.out.print(">>> ");
         String input = scan.nextLine().trim();
         String[] inputs = input.split(" ");
+
+        if(inputs.length != 2){
+            System.out.println("두 개의 정수를 입력해주세요");
+            return;
+        }
+
         int first, second;
 
         try{
