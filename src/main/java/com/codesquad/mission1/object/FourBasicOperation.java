@@ -1,28 +1,23 @@
 package com.codesquad.mission1.object;
 
 public class FourBasicOperation {
-    private final int firstNum;
-    private final int secondNum;
+    FourBasicOperation(){
 
-    public FourBasicOperation() {
-        firstNum = 10;
-        secondNum = 2;
     }
 
-    public int plus(){
-        return firstNum + secondNum;
+    public int plus(Number number) {
+        return number.getFirstNum() + number.getSecondNum();
     }
 
-    public int minus(){
-        return firstNum - secondNum;
+    public int minus(Number number){
+        return number.getFirstNum() - number.getSecondNum();
     }
 
-    public int multiply(){
-        return firstNum * secondNum;
+    public int multiply(Number number){
+        return number.getFirstNum() * number.getSecondNum();
     }
 
-    public int divide(){
-        return firstNum / secondNum;
+    public int divide(Number number){
+        return number.getFirstNum() / number.getSecondNum();
     }
 }
-
