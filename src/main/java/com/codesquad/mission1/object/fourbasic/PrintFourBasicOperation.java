@@ -1,4 +1,4 @@
-package com.codesquad.mission1.object;
+package com.codesquad.mission1.object.fourbasic;
 
 public class PrintFourBasicOperation {
     private final Number number;

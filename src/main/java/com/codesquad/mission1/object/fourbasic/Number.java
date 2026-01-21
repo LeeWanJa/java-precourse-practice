@@ -1,4 +1,4 @@
-package com.codesquad.mission1.object;
+package com.codesquad.mission1.object.fourbasic;
 
 public class Number {
     private final int firstNum;
