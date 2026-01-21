@@ -1,4 +1,4 @@
-package com.codesquad.mission1;
+package com.codesquad.mission1.loop;
 
 import java.util.Scanner;
 
