@@ -23,7 +23,6 @@ public class Person {
         this.childNum = childNum;
     }
 
-    //이름은 제인이고 나이는 30살 입니다.  성별은 여성이며, 기혼자 입니다. 자녀는 1명이 있습니다.
     public void printInfo(){
         String sex_str = sex ? "남성" : "여성";
         String married_str = married ? "기혼자" : "미혼자";

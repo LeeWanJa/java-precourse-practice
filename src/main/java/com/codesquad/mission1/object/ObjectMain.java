@@ -1,7 +1,11 @@
 package com.codesquad.mission1.object;
 
+import com.codesquad.mission1.object.cafe.Cafe;
+import com.codesquad.mission1.object.cafe.Customer;
 import com.codesquad.mission1.object.fourbasic.PrintFourBasicOperation;
 import com.codesquad.mission1.object.person.Person;
+
+import java.util.HashMap;
 
 public class ObjectMain {
     public static void main(String[] args) {
@@ -19,6 +23,15 @@ public class ObjectMain {
 
         // 3번
         System.out.println("===== 3 =====");
+        Cafe starCafe = new Cafe("별다방");
+        starCafe.putMenu("아메리카노", 4000);
+        Cafe congCafe = new Cafe("콩다방");
+        congCafe.putMenu("라떼", 5000);
 
+        Customer james = new Customer("James", 5000);
+        Customer tomas = new Customer("Tomas", 10000);
+        
+        james.buyCoffee(starCafe, "아메리카노");
+        tomas.buyCoffee(congCafe, "라떼");
     }
 }
