@@ -2,6 +2,7 @@ package com.codesquad.mission1.object;
 
 import com.codesquad.mission1.object.cafe.Cafe;
 import com.codesquad.mission1.object.cafe.Customer;
+import com.codesquad.mission1.object.date.MyDate;
 import com.codesquad.mission1.object.fourbasic.PrintFourBasicOperation;
 import com.codesquad.mission1.object.person.Person;
 
@@ -33,5 +34,13 @@ public class ObjectMain {
         
         james.buyCoffee(starCafe, "아메리카노");
         tomas.buyCoffee(congCafe, "라떼");
+        System.out.println();
+
+        // 4번
+        System.out.println("===== 4 =====");
+        MyDate date1 = new MyDate(30, 2, 2000);
+        System.out.println(date1.isValid());
+        MyDate date2 = new MyDate(2, 10, 2006);
+        System.out.println(date2.isValid());
     }
 }
