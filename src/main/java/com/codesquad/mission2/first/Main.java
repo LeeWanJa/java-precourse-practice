@@ -41,9 +41,11 @@ public class Main {
         System.out.println("책 추가");
         B.addBook("사피엔스", "유발 하라리");
         B.printBooks();
+        System.out.println();
 
 
         // 3. 미로 문제
-
+        Maze maze = new Maze();
+        maze.start();
     }
 }

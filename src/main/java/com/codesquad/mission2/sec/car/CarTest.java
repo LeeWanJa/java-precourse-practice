@@ -1,4 +1,4 @@
-package com.codesquad.mission2.sec;
+package com.codesquad.mission2.sec.car;
 
 public class CarTest {
 
