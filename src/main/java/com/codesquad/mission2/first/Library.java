@@ -1,4 +1,4 @@
-package com.codesquad.mission2.arrayobject;
+package com.codesquad.mission2.first;
 
 public class Library {
     private String[][] library = new String[5][2];

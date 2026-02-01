@@ -1,4 +1,4 @@
-package com.codesquad.mission2.arrayobject;
+package com.codesquad.mission2.first;
 
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -43,6 +43,7 @@ public class Main {
         B.printBooks();
 
 
+        // 3. 미로 문제
 
     }
 }
